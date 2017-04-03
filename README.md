@@ -1,1 +1,1 @@
-## rohitkrai.me - a simple resume website.
+## resume - a simple resume website.
