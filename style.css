@@ -1,0 +1,130 @@
+/* BODY SECTION */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    margin: 2% 5% 1% 5%;
+    display: inline-flex;
+}
+
+
+
+/*LEFT SIDE*/
+
+.left-alignment {
+    width: 25%;
+    text-align: right;
+    padding: 25px;
+    margin-top: 5%;
+}
+.left-alignment ul{
+    list-style: none;
+    padding: 0;
+}
+.left-alignment ul li {
+    margin: 5px 0;
+}
+.left-alignment h3 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 14%;
+}
+
+.left-alignment a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.left-alignment span {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/*RIGHT SIDE*/
+
+.right-alignment {
+    width: 75%;
+    text-align: left;
+    padding: 25px;
+}
+.right-alignment h3 {
+    font-size: 25px;
+    margin: 0;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+}
+.work-experience{
+    margin: 15px 0;
+}
+.work-experience h4 {
+    font-size: 20px;
+    margin: 0;
+    padding:10px 0;
+    font-family: 'Lato', sans-serif;
+}
+.work-experience span{
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+}
+.work-experience p{
+    font-size: 16px;
+    margin:10px 0;
+    line-height: 23px;
+}
+.mywork{
+    margin-top: 5%;
+}
+.skills-honors h3{
+    border:none;
+}
+.half-block{
+    width: 50%;
+    float: left;
+}
+.half-block ul{
+    list-style: none;
+    padding: 0;
+}
+.half-block ul li {
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 1023px) {
+    body,
+    .main-container {
+        margin: 0;
+        display: block;
+    }
+
+    .left-alignment,
+    .right-alignment {
+        width: 100%;
+        padding: 25px;
+        text-align: left;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .right-alignment {
+        border: 0;
+    }
+
+    .mywork {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .right-alignment h3 {
+        padding: 0 0 15px 0;
+    }
+
+    .work-experience p {
+        line-height: 27px;
+    }
+}
