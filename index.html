@@ -11,7 +11,7 @@
 <title>rohitkrai.me - a simple resume website.</title>
 
 <!-- Google Web Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 
 </head>
@@ -19,30 +19,38 @@
 <body>
 <div class="main-container">
     <div class="left-alignment">
-        <h3>ROHIT RAI</h3>
-        <ul>
+        <h3 class="name">Rohit Rai</h3>
+        <ul class="about">
             <li><a href="http://arkpod.in">arkpod.in</a></li>        
             <li><a href="mailto:rohitkrai03@gmail.com?Subject=Hello" target="_top">rohitkrai03@gmail.com</a></li>
-            <li><a href="https://github.com/rohitkrai03">Github</a></li>
             <li><a href="https://www.linkedin.com/in/rohitkrai03/">LinkedIn</a></li>
+            <li><a href="https://github.com/rohitkrai03">Github</a></li>
             <li><a href="https://resume.github.io/?rohitkrai03">Github Resume</a></li>
             <li><a href="http://git-awards.com/users/rohitkrai03">Github Awards</a></li>
             <li><span>+91-8087592312</span></li>
         </li>
+        <h4 class="skills-heading">Skills</h4>
+        <ul class="skills">
+            <li>Python, Flask</li>
+            <li>Javascript, React, Vuejs, Knockoutjs &amp; Node</li>
+            <li>HTML5, CSS3 &amp; SCSS</li>
+            <li>Webpack, Browserify &amp; Gulp</li>
+            <li>Git &amp; AWS</li>
+        </ul>
     </div>
     <div class="right-alignment">
         <div class="mywork">
-            <h3>EXPERIENCE</h3>
+            <h3>Experience</h3>
             <div class="work-experience">
                 <h4>Scroll.in, Senior Software Engineer</h4>
-                <span>APR 2015 - PRESENT | PUNE, MH</span>
-                <p>Lead for redesign and rewrite of main website using Python with Flask and Javascript with Vuejs. Built the backend architecture and RESTful APIs consumed by CMS, Website and APPs.
+                <span>JUNE 2016 - PRESENT | PUNE, MH</span>
+                <p>Lead the re-design & the re-write of Scroll.in  using Python with Flask & Javascript with Vuejs. Built the backend architecture and RESTful APIs consumed by CMS, Website and APPs.
                 </p> 
             </div>
             <div class="work-experience">
                 <h4>Scroll.in, Software Engineer</h4>
                 <span>APR 2015 - June 2016 | PUNE, MH</span>
-                <p>Worked on the frontend of CMS built on React and created various internal tools to manage Native Ads, Newsletters, Android App notifications, Video Uploads, etc. Worked on pageviews calculation and trending articles analysis algorithms and APIs.
+                <p>Worked on frontend of CMS built on React & help build various internal tools to manage Native Ads, Newsletters, Android App notifications, Video uploads, etc. Worked on pageviews calculation, trending articles analysis algorithms and related APIs.
                 </p> 
             </div>
             <div class="work-experience">
@@ -52,38 +60,47 @@
                 </p>
             </div>
         </div>
-        <div class="mywork">
-            <h3>SIDE PROJECTS</h3>
-            <div class="work-experience">
-                <h4><a href="https://github.com/rohitkrai03/pills">pills</a></h4>
-                <span>Aug 2015</span>
-                <p>A simple, responsive, and tiny CSS grid for humans who don't like memorising all those cryptic codes like col-*-6 or something.
-                </p>
-            </div>
-            <div class="work-experience">
-                <h4><a href="https://github.com/rohitkrai03/vue-starter">vue-starter</a></h4>
-                <span>Aug 2017</span>
-                <p>A Vue.js starter kit that lets you focus on more programming and less configuration.
-                </p>
-            </div>
-            <div class="work-experience">
-                <h4><a href="https://github.com/rohitkrai03/JavaScript30">JavaScript30</a></h4>
-                <span>Apr 2017 - May 2017</span>
-                <p>Vanilla JS Coding Challenge. 30 Days, built 30 things using just Vanilla Javascript.
-                </p>
-            </div>
-            <div class="work-experience">
-                <h4><a href="https://github.com/rohitkrai03/vue-parcel-example">vue-parcel-example</a></h4>
-                <span>Dec 2017</span>
-                <p>Minimum viable Vue app with Parcel Bundler
-                </p>
-            </div>
-            <div class="work-experience">
-                <h4><a href="https://github.com/rohitkrai03/iterators">iterators</a></h4>
-                <span>Jan 2014 - May 2014</span>
-                <p>A Share Market Prediction Application based on Markov and Hidden Markov Chains Model using historical share market data.
-                </p>
-            </div>
+        <div class="mywork side-projects">
+            <h3>Side projects</h3>
+            <ul>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/pills">pills</a></h4>
+                    <p>A simple, responsive, and tiny CSS.
+                    </p>
+                    <span>Aug 2015</span>
+                </li>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/vue-starter">vue-starter</a></h4>
+                    <p>A Vue.js starter kit that helps you focus on more programming and less configuration.
+                    </p>
+                    <span>Aug 2017</span>
+                </li>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/JavaScript30">JavaScript30</a></h4>
+                    <p>Built 30 things using just Vanilla Javascript for 30-day challenge.
+                    </p>
+                    <span>Apr 2017 - May 2017</span>
+                </li>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/vue-parcel-example">vue-parcel-example</a></h4>
+                    <p>Minimum viable Vue app with Parcel Bundler</p>
+                    <span>Dec 2017</span>
+                </li>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/iterators">iterators</a></h4>
+                    
+                    <p>A Share Market Prediction Application based on Markov and Hidden Markov Chains Model using historical share market data.
+                    </p>
+                    <span>Jan 2014 - May 2014</span>
+                </li>
+                <li class="work-experience">
+                    <h4><a href="https://github.com/rohitkrai03/moleit">MoleIt</a></h4>
+                    
+                    <p>A simple 2D Android Game based on cocos-2d lirbrary and implemented in C++ using Android NDK.
+                    </p>
+                    <span>Mar 2014</span>
+                </li>
+            </ul>
         </div>
         <div class="mywork">
             <h3>Education</h3>
@@ -94,7 +111,7 @@
                 </p>
             </div>
         </div>
-        <div class="skills-honors">
+      <!--   <div class="skills-honors">
             <div class="half-block">
                 <h3>Skills</h3>
                 <ul>
@@ -105,7 +122,7 @@
                     <li>Git | AWS</li>
                 </ul>
             </div>
-            <!-- <div class="half-block">
+            <div class="half-block">
                 <h3>Honors</h3>
                 <ul>
                     <li>Photoshop</li>
@@ -113,8 +130,8 @@
                     <li>Photoshop</li>
                     <li>Photoshop</li>
                 </ul>
-            </div> -->
-        </div>
+            </div>
+        </div> -->
     </div>
 </div>
 

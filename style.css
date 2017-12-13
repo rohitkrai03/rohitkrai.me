@@ -5,8 +5,19 @@ body {
 }
 
 .main-container {
-    margin: 2% 5% 1% 5%;
+    margin: 0 5% 1% 5%;
     display: inline-flex;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #36c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -24,24 +35,42 @@ body {
     padding: 0;
 }
 .left-alignment ul li {
-    margin: 5px 0;
+    margin-bottom: 15px;
 }
 .left-alignment h3 {
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 3px;
     margin-top: 14%;
+    font-weight: 700;
+}
+
+.left-alignment h4 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: 20%;
 }
 
 .left-alignment a {
+    font-size: 16px;
+}
+
+.left-alignment span {
     font-size: 16px;
     color: black;
     text-decoration: none;
 }
 
-.left-alignment span {
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
+.left-alignment ul.skills li {
+    padding: 10px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.skills-heading {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+    font-weight: 600;
 }
 
 
@@ -55,6 +84,7 @@ body {
 }
 .right-alignment h3 {
     font-size: 25px;
+    font-weight: 600;
     margin: 0;
     border-bottom: 1px solid #e1e1e1;
     padding: 10px 0;
@@ -66,7 +96,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding:10px 0;
-    font-family: 'Lato', sans-serif;
+    font-weight: 500;
 }
 .work-experience span{
     color: rgba(0,0,0,0.6);
@@ -78,7 +108,7 @@ body {
     line-height: 23px;
 }
 .mywork{
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .skills-honors h3{
     border:none;
@@ -93,6 +123,29 @@ body {
 }
 .half-block ul li {
     padding: 5px 0;
+}
+
+.side-projects ul {
+    padding: 0;
+}
+
+.side-projects li{
+    list-style: none;
+}
+
+.side-projects h4 {
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.side-projects p {
+    display: inline;
+    margin-left: 10px;
+}
+
+.side-projects span {
+    display: block;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -126,5 +179,33 @@ body {
 
     .work-experience p {
         line-height: 27px;
+    }
+
+    .left-alignment ul.skills li {
+        padding: 5px 0;
+    }
+}
+
+@media print {
+    body,
+    .main-container {
+        margin: 2%;
+        word-wrap:break-word;
+    }
+
+    .about a {
+        font-size: 13px;
+    }
+    
+    .about a[href^=http]:not(.no-link):after{
+        content: " : " attr(href);
+        color: #000;
+        text-align: left;
+    }
+
+    p,li,div {
+        page-break-before: avoid;
+        page-break-after: avoid;
+        page-break-inside: avoid;
     }
 }
