@@ -1,1 +1,1 @@
-## resume - a simple resume website.
+## resume - a simple postfolio website.
